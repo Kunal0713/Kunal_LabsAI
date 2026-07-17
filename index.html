@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal Deshmukh | Software Engineer</title>
+    <meta name="description" content="Kunal_Labs - Premium portfolio of Kunal Deshmukh, an Aspiring Software Engineer, AI Enthusiast, and Full Stack Developer. Discover projects, skills, and AI innovations.">
+    <meta name="keywords" content="Kunal Deshmukh, Software Engineer, Portfolio, VIT Chennai, AI Enthusiast, WebScaling , LendQuant, Smart Helmet">
+    <meta name="author" content="Kunal Deshmukh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Kunal0713">
+    <meta property="og:title" content="Kunal Deshmukh | Software Engineer">
+    <meta property="og:description" content="Premium futuristic portfolio inspired by Apple, OpenAI, Vercel, Stripe, and Linear.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Flat Link to Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- Mouse Glow Effect -->
+    <div id="mouse-glow"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+           <div class="loader-logo">Kunal_Labs<span>AI</span></div>
+            <div class="loader-track">
+                <div class="loader-bar"></div>
+            </div>
+            <div class="loader-text">Initializing Systems... <span id="load-percentage">0</span>%</div>
+        </div>
+    </div>
+
+    <!-- Sticky Glass Navbar -->
+    <header id="navbar">
+        <div class="navbar-container">
+            <a href="#" class="nav-logo">Kunal_Labs<span>AI</span></a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#ai-hub" class="nav-link">AI Hub</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <a href="#contact" class="cta-nav">Get In Touch</a>
+                <button id="mobile-menu-toggle" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-overlay">
+        <nav class="mobile-nav-menu">
+            <a href="#hero" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#ai-hub" class="mobile-link">AI Hub</a>
+            <a href="#timeline" class="mobile-link">Timeline</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Background Canvas for Neural Network & Floating Particles -->
+    <canvas id="neural-canvas"></canvas>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section-container">
+            <div class="hero-wrapper">
+                <div class="hero-content reveal">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Open for Collaborations
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I am <span class="gradient-text">Kunal Deshmukh</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span id="typing-text" data-words='["Aspiring Software Engineer", "AI Enthusiast", "Full Stack Developer"]'></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Engineering premium scalable software architectures at the intersection of production-grade web intelligence, full-stack systems, and robust machine learning deployment pipelines.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Explore Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-graphic reveal">
+                    <div class="image-glow-container">
+                        <div class="glow-ring"></div>
+                        <div class="profile-frame">
+                            <img src="Kunal.png" alt="Kunal Deshmukh Professional Photo" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="mouse-icon">
+                    <span class="wheel"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">01 // IDENTITY</span>
+                <h2 class="section-title">Architecting Digital Dimensions</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-side reveal">
+                    <div class="about-frame tilt-card">
+                        <img src="Kunal.png" alt="Kunal Deshmukh About Profile" class="about-photo">
+                        <div class="frame-border-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text-side reveal">
+                    <h3>Computer Science Engineering Student</h3>
+                    <h4 class="university-tag">VIT Chennai</h4>
+                    <p class="bio-text">
+                        I am a Computer Science Engineering student at VIT Chennai passionate about Software Engineering, Artificial Intelligence, Cloud Computing, Web Development, and Problem Solving. I enjoy building modern applications and continuously learning new technologies to bridge structural system codebases with intuitive interactive aesthetics.
+                    </p>
+                    <blockquote class="about-quote">
+                        "The best way to predict the future is to write the clean, optimized code that builds it."
+                    </blockquote>
+                    <div class="social-links-wrapper">
+                        <a href="https://github.com/Kunal0713" target="_blank" rel="noopener noreferrer" class="social-pill tilt-card">
+                            <svg class="pill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub Studio</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kunal-deshmukh-036733376" target="_blank" rel="noopener noreferrer" class="social-pill tilt-card">
+                            <svg class="pill-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Engine Section -->
+        <section id="statistics" class="section-container custom-glass-panel reveal">
+            <div class="stats-grid">
+                <div class="stat-item text-center">
+                    <div class="stat-number gradient-text"><span class="counter" data-target="98">0</span>%</div>
+                    <div class="stat-label">Algorithmic Efficiency</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="stat-number gradient-text"><span class="counter" data-target="10">0</span>+</div>
+                    <div class="stat-label">AI Platforms Mastered</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="stat-number gradient-text"><span class="counter" data-target="100">0</span>+</div>
+                    <div class="stat-label">DSA Code Problems Solved</div>
+                </div>
+                <div class="stat-item text-center">
+                    <div class="stat-number gradient-text"><span class="counter" data-target="100">0</span>%</div>
+                    <div class="stat-label">Responsive Architecture Design</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section id="skills" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">02 // TECH SPECTRUM</span>
+                <h2 class="section-title">Core Systems Competencies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-card tilt-card glass-panel" data-category="languages">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon-header">
+                        <span class="skill-type-tag">Programming</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">Java</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 90%;"></div></div></li>
+                        <li><span class="skill-name">Python</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 88%;"></div></div></li>
+                        <li><span class="skill-name">C++</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 85%;"></div></div></li>
+                        <li><span class="skill-name">JavaScript</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 92%;"></div></div></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card tilt-card glass-panel" data-category="frontend">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon-header">
+                        <span class="skill-type-tag">Web & Architecture</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">HTML & CSS</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 95%;"></div></div></li>
+                        <li><span class="skill-name">SQL Database</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 86%;"></div></div></li>
+                        <li><span class="skill-name">Git & GitHub</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 90%;"></div></div></li>
+                        <li><span class="skill-name">Data Structures (DSA)</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 88%;"></div></div></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card tilt-card glass-panel" data-category="cloud-ai">
+                    <div class="skill-card-glow"></div>
+                    <div class="skill-icon-header">
+                        <span class="skill-type-tag">Cloud & AI Deployment</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-name">Microsoft Azure</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 82%;"></div></div></li>
+                        <li><span class="skill-name">Cloud Computing Systems</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 84%;"></div></div></li>
+                        <li><span class="skill-name">Artificial Intelligence</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 89%;"></div></div></li>
+                        <li><span class="skill-name">Machine Learning Models</span><div class="skill-progress"><div class="skill-progress-bar" style="width: 85%;"></div></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Engineering Section -->
+        <section id="projects" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">03 // PRODUCTION SHUTTLES</span>
+                <h2 class="section-title">Selected Case Studies</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="project-showcase">
+                <!-- Project 1 -->
+                <div class="project-row reveal">
+                    <div class="project-meta-side">
+                        <span class="project-number">01</span>
+                        <h3 class="project-title-text">LendQuant</h3>
+                        <p class="project-subtitle-text">AI Powered Loan Recovery & Risk Analytics Platform</p>
+                        <p class="project-desc-paragraph">
+                            An enterprise-grade financial risk assessment platform designed to automate loan compliance diagnostics, evaluate visual data, predictive liquidity paths, and automate collection recovery optimizations with absolute transactional accuracy.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>AI Engines</span>
+                            <span>Risk Analytics</span>
+                            <span>Cloud Deployment</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                    <div class="project-visual-side tilt-card">
+                        <div class="project-card-glass">
+                            <div class="mock-window-header">
+                                <span class="dot crimson"></span><span class="dot amber"></span><span class="dot emerald"></span>
+                                <span class="mock-title">lendquant-analytics-dashboard.sys</span>
+                            </div>
+                            <div class="mock-window-body">
+                                <div class="mock-metric-row">
+                                    <div class="mock-metric-card"><small>RISK EVALUATION</small><p class="gradient-text">CRITICAL LOW</p></div>
+                                    <div class="mock-metric-card"><small>RECOVERY INDEX</small><p class="gradient-text">94.2%</p></div>
+                                </div>
+                                <div class="mock-chart-placeholder">
+                                    <div class="bar-chart-mock"><div class="bar-fill" style="height:40%"></div><div class="bar-fill" style="height:65%"></div><div class="bar-fill" style="height:85%"></div><div class="bar-fill" style="height:70%"></div><div class="bar-fill" style="height:95%"></div></div>
+                                }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-row reversed reveal">
+                    <div class="project-meta-side">
+                        <span class="project-number">02</span>
+                        <h3 class="project-title-text">Smart Helmet</h3>
+                        <p class="project-subtitle-text">Construction Worker Safety using IoT Hardware Systems</p>
+                        <p class="project-desc-paragraph">
+                            An industrial IoT protective ecosystem utilizing real-time sensor processing matrix structures to evaluate impact parameters, structural workplace anomalies, thermal spikes, and immediate emergency alerting networks over low-latency hardware channels.
+                        </p>
+                        <div class="project-tech-tags">
+                            <span>IoT Matrix</span>
+                            <span>Hardware Sensors</span>
+                            <span>Real-time Streams</span>
+                            <span>C++ Systems</span>
+                        </div>
+                    </div>
+                    <div class="project-visual-side tilt-card">
+                        <div class="project-card-glass">
+                            <div class="mock-window-header">
+                                <span class="dot crimson"></span><span class="dot amber"></span><span class="dot emerald"></span>
+                                <span class="mock-title">smart-helmet-telemetry.io</span>
+                            </div>
+                            <div class="mock-window-body">
+                                <div class="telemetry-grid-mock">
+                                    <div class="telemetry-log">>> SENSOR_MATRIX_INIT [OK]</div>
+                                    <div class="telemetry-log">>> IMPACT_DIAGNOSTIC_LEVEL_0 [SAFE]</div>
+                                    <div class="telemetry-log">>> THERMAL_VOLTAGE_STABLE [36.5C]</div>
+                                    <div class="telemetry-log pulse-glow">>> STREAMING TELEMETRY LIVE ...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Technology Hub Section -->
+        <section id="ai-hub" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">04 // NEURAL ECOSYSTEM</span>
+                <h2 class="section-title">AI Technology Integration Hub</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="hub-intro reveal">Forging operational intelligence pipelines using the planet's premium deep-learning platforms, orchestration modules, and creative automation systems.</p>
+            
+            <div class="hub-grid reveal">
+                <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">ChatGPT</h3>
+                    <p class="hub-desc">LLM architecture for complex automation pipelines, programmatic reasoning, and generative natural engineering scripts.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Claude</h3>
+                    <p class="hub-desc">State-of-the-art context window analysis, high-fidelity technical writing assistance, and analytical system code reviews.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Gemini</h3>
+                    <p class="hub-desc">Native multi-modal framework operations processing structural cross-functional text, code canvas maps, and streaming assets.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">DeepSeek</h3>
+                    <p class="hub-desc">Advanced reasoning and high-efficiency model frameworks tailored for optimized inference execution speeds.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Perplexity</h3>
+                    <p class="hub-desc">Real-time indexed factual query generation networks, systematic research sourcing, and citation parsing systems.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">GitHub Copilot</h3>
+                    <p class="hub-desc">Contextual code completion, predictive structural function building, and agile developer optimization engines.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://huggingface.co" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Hugging Face</h3>
+                    <p class="hub-desc">Open source base-model ecosystem hosting machine learning tokenizers, transformer weights, and data pipelines.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://www.langchain.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">LangChain</h3>
+                    <p class="hub-desc">Modular abstraction orchestration framework enabling vector databases to seamlessly merge into sequential agent loops.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://llama.meta.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Llama</h3>
+                    <p class="hub-desc">Meta's premium open weights infrastructure engineered for sovereign high-performance specialized deployment nodes.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://ollama.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Ollama</h3>
+                    <p class="hub-desc">Lightweight localized inference terminal management system designed for running foundational models offline.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://openrouter.ai" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">OpenRouter</h3>
+                    <p class="hub-desc">Unified payload routing interface layer supplying global fallback structures across multiple model endpoints.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">ElevenLabs</h3>
+                    <p class="hub-desc">Hyper-realistic hyper-tuned synthetic speech generation models with semantic voice clone profiles.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://runwayml.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Runway</h3>
+                    <p class="hub-desc">Cinematic fluid generative video synthesis structures utilizing absolute physical environment asset simulations.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Midjourney</h3>
+                    <p class="hub-desc">Advanced artistic conceptual latent diffusion processing image engines producing high-aesthetic output art panels.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+                <a href="https://sdk.vercel.ai" target="_blank" rel="noopener noreferrer" class="hub-card tilt-card glass-panel">
+                    <div class="hub-card-glow"></div>
+                    <h3 class="hub-title">Vercel AI SDK</h3>
+                    <p class="hub-desc">Streaming application UI abstraction layer components linking real-time JSON responses seamlessly into web designs.</p>
+                    <span class="hub-link-arrow">Verify Integration &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">05 // TELEMETRY CHRONOLOGY</span>
+                <h2 class="section-title">Academic & Professional Timeline</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="timeline-wrapper reveal">
+                <div class="timeline-center-line"></div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-panel tilt-card">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3 class="timeline-card-title">Computer Science Engineering</h3>
+                        <h4 class="timeline-card-sub">VIT Chennai</h4>
+                        <p class="timeline-card-desc">Immersed in comprehensive architectural computing paradigms: Data Structures, Advanced Design Algorithms, Database Engineering, Operating Systems, and Distributed Cloud Computing Infrastructures.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-panel tilt-card">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-card-title">LendQuant Initialization</h3>
+                        <h4 class="timeline-card-sub">Core Lead Developer</h4>
+                        <p class="timeline-card-desc">Architected the entire modular framework and visual frontend matrix execution mechanics for the LendQuant loan diagnostic engine.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-card glass-panel tilt-card">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-card-title">IoT Systems Launch</h3>
+                        <h4 class="timeline-card-sub">Hardware Integration Lead</h4>
+                        <p class="timeline-card-desc">Designed, compiled, and benchmarked custom sensory processing loops written in optimized hardware-level routines for the Smart Helmet initiative.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">06 // COMMS CHANNELS</span>
+                <h2 class="section-title">Initiate System Handshake</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-side reveal">
+                    <h3>Let's Build Something Exceptional</h3>
+                    <p class="contact-pitch">Whether you are looking to scale enterprise platforms, integrate next-gen LLM autonomous framework agents, or discuss premium high-performance web systems, reach out immediately.</p>
+                    <div class="contact-direct-cards">
+                        <div class="direct-card glass-panel">
+                            <small>LOCATION MATRIX</small>
+                            <p>VIT Chennai, Tamil Nadu, India</p>
+                        </div>
+                        <div class="direct-card glass-panel">
+                            <small>DIGITAL SOURCE</small>
+                            <p><a href="https://github.com/Kunal0713" target="_blank" rel="noopener noreferrer">github.com/Kunal0713</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-side reveal">
+                    <form id="portfolio-contact-form" class="glass-panel" onsubmit="event.preventDefault(); alert('Handshake parameters acknowledged. Message routing successfully simulated!'); this.reset();">
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="name">IDENTITY NAME</label>
+                                <input type="text" id="name" required placeholder="e.g. Satya Nadella">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">DIGITAL MAIL ADDRESS</label>
+                                <input type="email" id="email" required placeholder="name@domain.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">OBJECTIVE SUBJECT</label>
+                            <input type="text" id="subject" required placeholder="Project Architectural Consultation">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">TRANSMISSION PAYLOAD</label>
+                            <textarea id="message" rows="5" required placeholder="Describe your architectural goals, requirements, or opportunities..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Fire Transmission payload &rarr;</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer System Section -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">Kunal_Labs<span>AI</span></a>
+                    <p>Forging high-fidelity programmatic infrastructure across futuristic web architectures.</p>
+                </div>
+                <div class="footer-nav-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#ai-hub">AI Hub</a>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <p class="copyright-text">&copy; 2026 Kunal_Labs // Kunal Deshmukh. Engineered with absolute precision.</p>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/Kunal0713" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                    <a href="https://www.linkedin.com/in/kunal-deshmukh-036733376" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button Anchor -->
+    <button id="back-to-top" aria-label="Scroll to top">&uarr;</button>
+
+    <!-- Flat Link to script -->
+    <script src="app.js"></script>
+</body>
+</html>
