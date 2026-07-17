@@ -7,7 +7,7 @@ A modern, responsive, and interactive personal portfolio website showcasing my s
 > Add your deployed website link here
 
 ```
-https://your-portfolio-link.com
+https://kunal0713.github.io/Kunal_LabsAI/
 ```
 
 ---
